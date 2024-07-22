@@ -8,6 +8,15 @@ html {
 }
 body{
     background-color: #ffffff;
+    font-family: 'Roboto medium';
+}
+@font-face {
+    font-family: 'Roboto medium';
+    src: url(./Fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto light';
+    src: url(./Fonts/Roboto-Light.ttf);
 }
 
 /* Navbar Started*/
@@ -18,6 +27,31 @@ body{
     width: 100%;
 }
 /* Navbar Ended */
+
+/* Banner Started */
+.banner-main-div {
+    margin: 40px 50px 0px 120px;
+    column-gap: 60px;
+}
+.banner-sub-main-div {
+    flex-basis: 43%;
+}
+.banner-sub-main-div a:first-of-type {
+    background-color: #149f39;
+    font-family: 'Roboto light';
+}
+.banner-sub-main-div a:last-of-type {
+    background-color: #ffc066;
+}
+.banner-sub-main-div p:first-of-type {
+    font-size: 7rem;
+}
+.banner-sub-main-div p:last-of-type {
+    font-size: 1.15rem;
+}
+
+
+/* Banner Ended */
 
 @media (max-width: 1024px) {
     .nav-main {
