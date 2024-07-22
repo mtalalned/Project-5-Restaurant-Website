@@ -14,4 +14,34 @@ body{
 .nav-main {
     margin: 0px 50px 0px 120px;
 }
+.nav-sub-main > img {
+    width: 100%;
+}
 /* Navbar Ended */
+
+@media (max-width: 1024px) {
+    .nav-main {
+        margin: 0px 25px 0px 65px;
+    }
+}
+@media (max-width: 600px) {
+    .nav-main {
+        margin: 0px 25px 0px 25px;
+    }
+}
+@media (max-width: 375px) {
+    .nav-main {
+        margin: 0px 25px 0px 25px;
+    }
+    .nav-sub-main > img {
+        width: 85%;
+    }
+}
+@media (max-width: 320px) {
+    .nav-main {
+        margin: 0px 15px 0px 15px;
+    }
+    .nav-sub-main > img {
+        width: 75%;
+    }
+}
