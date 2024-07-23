@@ -26,6 +26,9 @@ body{
 .nav-sub-main > img {
     width: 100%;
 }
+.nav-sub-main > i {
+    font-size: 2.5rem;
+}
 /* Navbar Ended */
 
 /* Banner Started */
@@ -36,28 +39,52 @@ body{
 .banner-sub-main-div {
     flex-basis: 43%;
 }
-.banner-sub-main-div a:first-of-type {
+.banner-sub-main-div-2 {
+    flex-basis: 43%;
+}
+.banner-sub-main-div-2 a:first-of-type {
     background-color: #149f39;
     font-family: 'Roboto light';
     font-size: 1.65rem;
 }
-.banner-sub-main-div a:last-of-type {
+.banner-sub-main-div-2 a:last-of-type {
     background-color: #ffc066;
     font-size: 2.5rem;
 }
-.banner-sub-main-div p:first-of-type {
+.banner-sub-main-div-2 p:first-of-type {
     font-size: 7rem;
 }
-.banner-sub-main-div p:last-of-type {
+.banner-sub-main-div-2 p:last-of-type {
     font-size: 1.15rem;
+}
+.banner-sub-main-div-special{
+    column-gap: 50px;
+    display: none;
+}
+.banner-sub-main-div-special p:first-of-type {
+    font-family: 'Roboto medium';
+    font-size: 8rem;
+    flex-basis: 80%;
+    display: none;
+}
+.banner-sub-main-div-special a:first-of-type {
+    background-color: #149f39;
+    font-family: 'Roboto light';
+    font-size: 3rem;
+    display: none;
+}
+.banner-sub-main-div-special a:last-of-type {
+    background-color: #ffc066;
+    font-size: 3rem;
+    display: none;
 }
 /* Banner Ended */
 
 @media (max-width: 1248px){
-    .banner-sub-main-div p:first-of-type {
+    .banner-sub-main-div-2 p:first-of-type {
         font-size: 6rem;
     }
-    .banner-sub-main-div a:last-of-type {
+    .banner-sub-main-div-2 a:last-of-type {
         font-size: 2.5rem;
     }
 }
@@ -72,6 +99,9 @@ body{
     .nav-main {
         margin: 0px 25px 0px 65px;
     }
+    .nav-sub-main > i {
+        font-size: 2.75rem;
+    }
     .banner-main-div {
         margin: 30px 50px 0px 60px;
         column-gap: 60px;
@@ -79,10 +109,7 @@ body{
     html {
         font-size: 55%;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
-    }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.25rem;
     }
 }
@@ -91,10 +118,10 @@ body{
     html {
         font-size: 50%;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
+    .nav-sub-main > i {
+        font-size: 2.80rem;
     }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.30rem;
     }
 }
@@ -103,10 +130,10 @@ body{
     html {
         font-size: 45%;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
+    .nav-sub-main > i {
+        font-size: 2.85rem;
     }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.30rem;
     }
 }
@@ -118,14 +145,14 @@ body{
     .nav-sub-main > img {
         width: 90%;
     }
+    .nav-sub-main > i {
+        font-size: 3.5rem;
+    }
     .banner-main-div {
         margin: 30px 30px 0px 60px;
         column-gap: 40px;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
-    }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.40rem;
     }
 }
@@ -137,14 +164,14 @@ body{
     .nav-sub-main > img {
         width: 87%;
     }
+    .nav-sub-main > i {
+        font-size: 3.75rem;
+    }
     .banner-main-div {
         margin: 30px 30px 0px 60px;
         column-gap: 40px;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
-    }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.35rem;
     }
 }
@@ -159,37 +186,85 @@ body{
     .nav-sub-main > img {
         width: 82%;
     }
+    .nav-sub-main > i {
+        font-size: 4.35rem;
+    }
     .banner-main-div {
         margin: 20px 25px 0px 25px;
         column-gap: 40px;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
-    }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.35rem;
     }
 }
 
 @media (max-width: 494px) {
-    .nav-main {
-        margin: 0px 25px 0px 25px;
-    }
     html {
         font-size: 25%;
     }
     .nav-sub-main > img {
         width: 75%;
     }
+    .nav-sub-main > i {
+        font-size: 5.25rem;
+    }
     .banner-main-div {
         margin: 20px 25px 0px 25px;
         column-gap: 30px;
     }
-    .banner-sub-main-div {
-        flex-basis: 43%;
-    }
-    .banner-sub-main-div p:last-of-type {
+    .banner-sub-main-div-2 p:last-of-type {
         font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav-main {
+        margin: 0px 25px 0px 25px;
+    }
+    html {
+        font-size: 30%;
+    }
+    .nav-sub-main > img {
+        width: 75%;
+    }
+    .nav-sub-main > i {
+        font-size: 5rem;
+    }
+    .banner-main-div {
+        margin: 15px 0px 0px 0px;
+        row-gap: 15px;
+    }
+    .banner-sub-main-div {
+        flex-basis: 80%;
+    }
+    .banner-sub-main-div-2 {
+        display: none;
+    }
+    .banner-sub-main-div-2 a:first-of-type {
+        display: none;
+    }
+    .banner-sub-main-div-2 a:last-of-type {
+        display: none;
+    }
+    .banner-sub-main-div-2 p:first-of-type {
+        display: none;
+    }
+    .banner-sub-main-div-2 p:last-of-type {
+        display: none;
+    }
+    .banner-sub-main-div-special{
+        column-gap: 25px;
+        margin-top: -25px;
+        display: inherit;
+    }
+    .banner-sub-main-div-special p:first-of-type {
+        display: inherit;
+    }
+    .banner-sub-main-div-special a:first-of-type {
+        display: inherit;
+    }
+    .banner-sub-main-div-special a:last-of-type {
+        display: inherit;
     }
 }
 
@@ -199,6 +274,20 @@ body{
     }
     .nav-sub-main > img {
         width: 85%;
+    }
+    .banner-sub-main-div-special{
+        column-gap: 25px;
+        margin-top: -25px;
+        display: inherit;
+    }
+    .banner-sub-main-div-special p:first-of-type {
+        display: inherit;
+    }
+    .banner-sub-main-div-special a:first-of-type {
+        display: inherit;
+    }
+    .banner-sub-main-div-special a:last-of-type {
+        display: inherit;
     }
 }
 
