@@ -39,9 +39,11 @@ body{
 .banner-sub-main-div a:first-of-type {
     background-color: #149f39;
     font-family: 'Roboto light';
+    font-size: 1.65rem;
 }
 .banner-sub-main-div a:last-of-type {
     background-color: #ffc066;
+    font-size: 2.5rem;
 }
 .banner-sub-main-div p:first-of-type {
     font-size: 7rem;
@@ -49,20 +51,148 @@ body{
 .banner-sub-main-div p:last-of-type {
     font-size: 1.15rem;
 }
-
-
 /* Banner Ended */
+
+@media (max-width: 1248px){
+    .banner-sub-main-div p:first-of-type {
+        font-size: 6rem;
+    }
+    .banner-sub-main-div a:last-of-type {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1092px){
+    html{
+        font-size: 57.5%;
+    }
+}
 
 @media (max-width: 1024px) {
     .nav-main {
         margin: 0px 25px 0px 65px;
     }
+    .banner-main-div {
+        margin: 30px 50px 0px 60px;
+        column-gap: 60px;
+    }
+    html {
+        font-size: 55%;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.25rem;
+    }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 920px) {
+    html {
+        font-size: 50%;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.30rem;
+    }
+}
+
+@media (max-width: 850px) {
+    html {
+        font-size: 45%;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.30rem;
+    }
+}
+
+@media (max-width: 776px) {
+    html {
+        font-size: 40%;
+    }
+    .nav-sub-main > img {
+        width: 90%;
+    }
+    .banner-main-div {
+        margin: 30px 30px 0px 60px;
+        column-gap: 40px;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.40rem;
+    }
+}
+
+@media (max-width: 682px) {
+    html {
+        font-size: 35%;
+    }
+    .nav-sub-main > img {
+        width: 87%;
+    }
+    .banner-main-div {
+        margin: 30px 30px 0px 60px;
+        column-gap: 40px;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 608px) {
     .nav-main {
         margin: 0px 25px 0px 25px;
     }
+    html {
+        font-size: 30%;
+    }
+    .nav-sub-main > img {
+        width: 82%;
+    }
+    .banner-main-div {
+        margin: 20px 25px 0px 25px;
+        column-gap: 40px;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.35rem;
+    }
 }
+
+@media (max-width: 494px) {
+    .nav-main {
+        margin: 0px 25px 0px 25px;
+    }
+    html {
+        font-size: 25%;
+    }
+    .nav-sub-main > img {
+        width: 75%;
+    }
+    .banner-main-div {
+        margin: 20px 25px 0px 25px;
+        column-gap: 30px;
+    }
+    .banner-sub-main-div {
+        flex-basis: 43%;
+    }
+    .banner-sub-main-div p:last-of-type {
+        font-size: 1.35rem;
+    }
+}
+
 @media (max-width: 375px) {
     .nav-main {
         margin: 0px 25px 0px 25px;
@@ -71,6 +201,7 @@ body{
         width: 85%;
     }
 }
+
 @media (max-width: 320px) {
     .nav-main {
         margin: 0px 15px 0px 15px;
