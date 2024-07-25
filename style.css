@@ -35,6 +35,7 @@ body{
 .banner-main-div {
     margin: 40px 50px 0px 120px;
     column-gap: 60px;
+    animation: translatexy 3s;
 }
 .banner-sub-main-div {
     flex-basis: 43%;
@@ -45,17 +46,12 @@ body{
 .banner-sub-main-div-2 a:first-of-type {
     background-color: #149f39;
     font-family: 'Roboto light';
-    font-size: 1.65rem;
 }
 .banner-sub-main-div-2 a:last-of-type {
     background-color: #ffc066;
-    font-size: 2.5rem;
 }
 .banner-sub-main-div-2 p:first-of-type {
     font-size: 7rem;
-}
-.banner-sub-main-div-2 p:last-of-type {
-    font-size: 1.15rem;
 }
 .banner-sub-main-div-special{
     column-gap: 50px;
@@ -70,22 +66,20 @@ body{
 .banner-sub-main-div-special a:first-of-type {
     background-color: #149f39;
     font-family: 'Roboto light';
-    font-size: 3rem;
     display: none;
 }
 .banner-sub-main-div-special a:last-of-type {
     background-color: #ffc066;
-    font-size: 3rem;
     display: none;
 }
 /* Banner Ended */
 
 @media (max-width: 1248px){
     .banner-sub-main-div-2 p:first-of-type {
-        font-size: 6rem;
+        font-size: 6rem !important;
     }
     .banner-sub-main-div-2 a:last-of-type {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
 }
 
@@ -110,7 +104,7 @@ body{
         font-size: 55%;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
 }
 
@@ -122,7 +116,7 @@ body{
         font-size: 2.80rem;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.30rem;
+        font-size: 1.30rem !important;
     }
 }
 
@@ -134,7 +128,7 @@ body{
         font-size: 2.85rem;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.30rem;
+        font-size: 1.30rem !important;
     }
 }
 
@@ -153,7 +147,7 @@ body{
         column-gap: 40px;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.40rem;
+        font-size: 1.40rem !important;
     }
 }
 
@@ -172,7 +166,7 @@ body{
         column-gap: 40px;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.35rem;
+        font-size: 1.35rem !important;
     }
 }
 
@@ -194,7 +188,7 @@ body{
         column-gap: 40px;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.35rem;
+        font-size: 1.35rem !important;
     }
 }
 
@@ -213,7 +207,7 @@ body{
         column-gap: 30px;
     }
     .banner-sub-main-div-2 p:last-of-type {
-        font-size: 1.35rem;
+        font-size: 1.35rem !important;
     }
 }
 
@@ -253,7 +247,6 @@ body{
         display: none;
     }
     .banner-sub-main-div-special{
-        column-gap: 25px;
         margin-top: -25px;
         display: inherit;
     }
@@ -276,7 +269,6 @@ body{
         width: 85%;
     }
     .banner-sub-main-div-special{
-        column-gap: 25px;
         margin-top: -25px;
         display: inherit;
     }
@@ -297,5 +289,20 @@ body{
     }
     .nav-sub-main > img {
         width: 75%;
+    }
+}
+
+@keyframes translatexy {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(-50px);
+    }
+    66% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
