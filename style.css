@@ -21,44 +21,38 @@ body{
 
 /* Navbar Started*/
 .nav-main {
-    margin: 0px 50px 0px 120px;
-}
-.nav-sub-main > img {
-    width: 100%;
+    margin: 0px 5% 0px 10%;
 }
 .nav-sub-main > i {
-    font-size: 2.5rem;
+    font-size: 2.60rem;
 }
 /* Navbar Ended */
 
 /* Banner Started */
 .banner-main-div {
-    margin: 40px 50px 0px 120px;
-    column-gap: 60px;
+    margin: 4% 4% 0% 8.25%;
+    column-gap: 4%;
 }
 .banner-sub-main-div {
     flex-basis: 43%;
+}
+.banner-sub-main-div > img {
     animation: scalexy 3s linear 0s 3 alternate forwards;
-
 }
-.banner-sub-main-div-2 {
-    flex-basis: 43%;
-}
-.banner-sub-main-div-2 a:first-of-type {
+.banner-sub-main-div a:first-of-type {
     background-color: #149f39;
     font-family: 'Roboto light';
     animation: scalexy1 2s linear 1s 2 alternate forwards;
 }
-.banner-sub-main-div-2 a:last-of-type {
+.banner-sub-main-div a:last-of-type {
     background-color: #ffc066;
     animation: scalexy1 2s linear 7s 2 alternate forwards;
 }
-.banner-sub-main-div-2 p:first-of-type {
+.banner-sub-main-div p:first-of-type {
     font-size: 7rem;
     animation: translatexy 3s linear 4s 1 alternate forwards;
 }
-.banner-sub-main-div-special{
-    column-gap: 50px;
+.banner-sub-main-div-special {
     display: none;
 }
 .banner-sub-main-div-special p:first-of-type {
@@ -80,12 +74,12 @@ body{
 
 /* Icons Started */
 .icon-main-div {
-    margin: 100px 50px 0px 120px;
-    column-gap: 10px;
+    margin: 8% 4% 0% 8%;
+    column-gap: 1%;
 }
 .icon-sub-main-div {
     flex-basis: 25%;
-    column-gap: 10px;
+    column-gap: 3%;
 }
 .box1 {
     flex-basis: 25%;
@@ -97,45 +91,46 @@ body{
 
 /* Pictures Started */
 .menu-main-div {
-    border: 1px solid black;
     display: grid;
-    /* width: 85%; */
-    margin: 0px 115px;
+    margin: 5% 10% 0% 10%;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto auto;
-    gap: 25px;
+    gap: 2.5%;
+
 }
 .box1A {
-    border: 1px solid red;
     grid-column: 1 / 5;
+    margin-bottom: -1%;
+}
+.box1A > a {
+    background-color: #149f39;
+    font-family: 'Roboto Light';
 }
 .box1A- {
-    border: 1px solid red;
     grid-column: 1 / 5;
+    margin-bottom: -1%;
 }
-.box3 {
-    border: 1px solid red;
+.box1A- > p {
+    font-size: 3.75rem;
+    font-family: 'Roboto Light';
 }
 .box1a {
-    border: 1px solid red;
     grid-column: 1 / 3;
     grid-row: 3 / 5;
 }
 .box1b {
-    border: 1px solid red;
     grid-row: 3 / 5;
 }
 .box1c {
-    border: 1px solid blue;
     grid-row: 4 / 6;
 }
 /* Pictures Ended */
 
 @media (max-width: 1248px){
-    .banner-sub-main-div-2 p:first-of-type {
+    .banner-sub-main-div p:first-of-type {
         font-size: 6rem !important;
     }
-    .banner-sub-main-div-2 a:last-of-type {
+    .banner-sub-main-div a:last-of-type {
         font-size: 2.5rem !important;
     }
     .box2 p:first-of-type {
@@ -147,41 +142,20 @@ body{
     html{
         font-size: 57.5%;
     }
-    .icon-sub-main-div {
-        flex-basis: 26%;
-        column-gap: 10px;
-    }
-    .box1 {
-        flex-basis: 25%;
-    }
-    .box2 {
-        flex-basis: 68%;
-    }
     .box2 p:first-of-type {
         font-size: 1.30rem !important;
     }
 }
 
 @media (max-width: 1024px) {
-    .nav-main {
-        margin: 0px 25px 0px 65px;
-    }
     .nav-sub-main > i {
         font-size: 2.75rem;
-    }
-    .banner-main-div {
-        margin: 30px 50px 0px 60px;
-        column-gap: 60px;
     }
     html {
         font-size: 55%;
     }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.25rem !important;
-    }
-    .icon-sub-main-div {
-        flex-basis: 28%;
-        column-gap: 10px;
     }
 }
 
@@ -192,22 +166,13 @@ body{
     .nav-sub-main > i {
         font-size: 2.80rem;
     }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.30rem !important;
-    }
-    .icon-sub-main-div {
-        flex-basis: 29%;
-        column-gap: 10px;
-    }
-    .box1 {
-        flex-basis: 25%;
-    }
-    .box2 {
-        flex-basis: 68%;
     }
     .box2 p:first-of-type {
         font-size: 1.40rem !important;
     }
+    
 }
 
 @media (max-width: 850px) {
@@ -217,16 +182,8 @@ body{
     .nav-sub-main > i {
         font-size: 2.85rem;
     }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.30rem !important;
-    }
-    .icon-main-div {
-        margin: 65px 50px 0px 80px;
-        column-gap: 10px;
-    }
-    .icon-sub-main-div {
-        flex-basis: 29%;
-        column-gap: 10px;
     }
     .box2 p:first-of-type {
         font-size: 1.50rem !important;
@@ -237,22 +194,11 @@ body{
     html {
         font-size: 40%;
     }
-    .nav-sub-main > img {
-        width: 90%;
-    }
     .nav-sub-main > i {
         font-size: 3.5rem;
     }
-    .banner-main-div {
-        margin: 30px 30px 0px 60px;
-        column-gap: 40px;
-    }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.40rem !important;
-    }
-    .icon-sub-main-div {
-        flex-basis: 29%;
-        column-gap: 10px;
     }
     .box2 p:first-of-type {
         font-size: 1.70rem !important;
@@ -264,57 +210,28 @@ body{
         font-size: 35%;
     }
     .nav-sub-main > img {
-        width: 87%;
+        width: 85% !important;
     }
     .nav-sub-main > i {
         font-size: 3.75rem;
     }
-    .banner-main-div {
-        margin: 30px 30px 0px 60px;
-        column-gap: 40px;
-    }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.35rem !important;
-    }
-    .icon-sub-main-div {
-        flex-basis: 30%;
-        column-gap: 10px;
     }
 }
 
 @media (max-width: 608px) {
-    .nav-main {
-        margin: 0px 25px 0px 25px;
-    }
     html {
         font-size: 30%;
-    }
-    .nav-sub-main > img {
-        width: 82%;
     }
     .nav-sub-main > i {
         font-size: 4.35rem;
     }
     .banner-main-div {
-        margin: 20px 25px 0px 25px;
-        column-gap: 40px;
+        margin: 4% 4% 0px 8%;
     }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.35rem !important;
-    }
-    .icon-main-div {
-        margin: 50px 50px 0px 65px;
-        column-gap: 10px;
-    }
-    .icon-sub-main-div {
-        flex-basis: 31%;
-        column-gap: 5px;
-    }
-    .box1 {
-        flex-basis: 24%;
-    }
-    .box2 {
-        flex-basis: 70%;
     }
     .box2 p:first-of-type {
         font-size: 1.65rem !important;
@@ -326,57 +243,40 @@ body{
         font-size: 25%;
     }
     .nav-sub-main > img {
-        width: 75%;
+        width: 75% !important;
     }
     .nav-sub-main > i {
         font-size: 5.25rem;
     }
-    .banner-main-div {
-        margin: 20px 25px 0px 25px;
-        column-gap: 30px;
-    }
-    .banner-sub-main-div-2 p:last-of-type {
+    .banner-sub-main-div p:last-of-type {
         font-size: 1.35rem !important;
     }
 }
 
 @media (max-width: 425px) {
     .nav-main {
-        margin: 0px 25px 0px 25px;
+        margin: 0px 10% 0px 10%;
     }
     html {
         font-size: 30%;
     }
     .nav-sub-main > img {
-        width: 75%;
+        width: 75% !important;
     }
     .nav-sub-main > i {
         font-size: 5rem;
     }
     .banner-main-div {
-        margin: 15px 0px 0px 0px;
         row-gap: 15px;
     }
     .banner-sub-main-div {
-        flex-basis: 80%;
+        flex-basis: 85%;
     }
-    .banner-sub-main-div-2 {
-        display: none;
-    }
-    .banner-sub-main-div-2 a:first-of-type {
-        display: none;
-    }
-    .banner-sub-main-div-2 a:last-of-type {
-        display: none;
-    }
-    .banner-sub-main-div-2 p:first-of-type {
-        display: none;
-    }
-    .banner-sub-main-div-2 p:last-of-type {
-        display: none;
+    .banner-main-div > :nth-child(2){
+        display: none !important;
     }
     .banner-sub-main-div-special{
-        margin-top: -25px;
+        margin-top: 5px;
         display: initial;
     }
     .banner-sub-main-div-special p:first-of-type {
@@ -391,21 +291,9 @@ body{
         display: initial;
         animation: rotateScale 2s linear 2.5s 2 normal forwards;
     }
-    .icon-main-div {
-        margin: 40px 25px 0px 25px;
-        column-gap: 10px;
-    }
     .icon-sub-main-div {
-        flex-basis: 10%;
         min-width: 150px;
-        column-gap: 15px;
         animation: scalexy1 3s linear 1s 2 alternate forwards;
-    }
-    .box1 {
-        flex-basis: 25%;
-    }
-    .box2 {
-        flex-basis: 65%;
     }
     .box2 > p > span  {
         font-size: 2.5rem !important;
@@ -414,31 +302,22 @@ body{
         font-size: 1.80rem !important;
     }
     .menu-main-div {
-        border: 1px solid black;
-        display: grid;
-        /* width: 85%; */
-        margin: 0px 35px;
         grid-template-columns: auto auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-        gap: 5px;
     }
     .box1A {
-        border: 1px solid green;
         grid-column: 1 / 7;
         grid-row: 1 / 3;
     }
     .box1A- {
-        border: 1px solid green;
         grid-column: 1 / 7;
         grid-row: 3 / 5;
     }
     .box3 {
-        border: 1px solid red;
         grid-column: 1 / 3;
         grid-row: 9 / 11;
     }
     .box3a {
-        border: 1px solid red;
         grid-column: 3 / 5;
         grid-row: 9 / 11;
     }
@@ -451,26 +330,20 @@ body{
         grid-row: 11 / 15;
     }
     .box1a {
-        border: 1px solid red;
         grid-column: 1 / 5;
         grid-row: 5 / 9;
     }
     .box1b {
-        border: 1px solid red;
         grid-column: 5 / 7;
         grid-row: 5 / 9;
     }
     .box1c {
-        border: 1px solid blue;
         grid-column: 1 / 3;
         grid-row: 11 / 15;
     }
 }
 
 @media (max-width: 375px) {
-    .nav-main {
-        margin: 0px 25px 0px 25px;
-    }
     .nav-sub-main > img {
         width: 85%;
     }
@@ -480,20 +353,9 @@ body{
     .banner-sub-main-div-special a:last-of-type {
         animation: rotateScale 2s linear 1s 2 normal forwards;
     }
-    .icon-main-div {
-        margin: 40px 15px 0px 15px;
-        column-gap: 5px;
-    }
     .icon-sub-main-div {
         flex-basis: 80%;
-        column-gap: 15px;
         animation: scalexy1 3s linear 1s 2 alternate forwards;
-    }
-    .box1 {
-        flex-basis: 25%;
-    }
-    .box2 {
-        flex-basis: 68%;
     }
     .box2 > p > span  {
         font-size: 3rem !important;
@@ -504,9 +366,6 @@ body{
 }
 
 @media (max-width: 320px) {
-    .nav-main {
-        margin: 0px 15px 0px 15px;
-    }
     .nav-sub-main > img {
         width: 75%;
     }
