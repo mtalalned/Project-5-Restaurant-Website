@@ -93,22 +93,16 @@ body{
 .menu-main-div {
     display: grid;
     margin: 5% 10% 0% 10%;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr 1fr 1fr;
     gap: 2.5%;
-
 }
-.box1A {
+.box1A , .box1A- {
     grid-column: 1 / 5;
-    margin-bottom: -1%;
 }
 .box1A > a {
     background-color: #149f39;
     font-family: 'Roboto Light';
-}
-.box1A- {
-    grid-column: 1 / 5;
-    margin-bottom: -1%;
 }
 .box1A- > p {
     font-size: 3.75rem;
@@ -125,6 +119,12 @@ body{
     grid-row: 4 / 6;
 }
 /* Pictures Ended */
+
+hr {
+    margin-top: 65px;
+}
+
+
 
 @media (max-width: 1248px){
     .banner-sub-main-div p:first-of-type {
@@ -302,8 +302,9 @@ body{
         font-size: 1.80rem !important;
     }
     .menu-main-div {
-        grid-template-columns: auto auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: auto auto auto auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2%;
     }
     .box1A {
         grid-column: 1 / 7;
